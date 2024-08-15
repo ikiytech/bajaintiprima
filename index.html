@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAJA INTI PRIMA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between p-4 bg-white shadow-md">
+            <div class="flex items-center">
+                <img src="/public/image/logo bip.png" alt="Logo" class="h-10">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="hover:underline">Beranda</a>
+                    <a href="#produk" class="hover:underline">Produk</a>
+                    <a href="#tentang-kami" class="hover:underline">Tentang Kami</a>
+                    <a href="#testimoni" class="hover:underline">Testimoni</a>
+                    <a href="#faq" class="hover:underline">FAQ</a>
+                </div>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#beranda" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Beranda</a>
+        <a href="#produk" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Produk</a>
+        <a href="#tentang-kami" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Tentang Kami</a>
+        <a href="#testimoni" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Testimoni</a>
+        <a href="#faq" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">FAQ</a>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative bg-cover bg-center h-screen" style="background-image: url('/public/image/rsu handayani.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center">
+            <h1 class="text-5xl font-bold text-white">Konstruksi & Bahan Bangunan Terpercaya</h1>
+            <p class="text-xl text-gray-200 mt-4">Kami menawarkan berbagai produk steel berkualitas untuk memenuhi semua kebutuhan konstruksi Anda.</p>
+            <a href="https://wa.me/6282210108351" class="mt-8 inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600">Hubungi Kami</a>
+        </div>
+    </section>
+
+
+
+    <section id="produk" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Produk Super Terbaik Kami</h2>
+            <div class="relative">
+                <div id="produk-carousel" class="flex gap-8 overflow-x-auto scroll-smooth whitespace-nowrap">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/Besi.jpg" alt="Besi Beton" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Besi Beton</h3>
+                        <p class="text-gray-600 mt-2">Mulai Ukuran dari 8mm Dengan Harga  Rp39.600</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/channel c.jpg" alt="Chanel C (CNP)" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Chanel C (CNP)</h3>
+                        <p class="text-gray-600 mt-2">digunakan sebagai balok atau rangka pada konstruksi bangunan.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/Channel u.jpg" alt="Chanel U" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Chanel U</h3>
+                        <p class="text-gray-600 mt-2">digunakan untuk memperkuat dan mendukung struktur seperti rangka pintu dan jembatan. </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/truss.jpg" alt="Truss" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Truss</h3>
+                        <p class="text-gray-600 mt-2">Mulai Tebal dari 0.35 Dengan Harga Rp25.000</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/wire mesh.png" alt="Wire Mesh" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Wire Mesh</h3>
+                        <p class="text-gray-600 mt-2">Mulai Ukuran dari 5.4 x 2.1m M-8 (7.5)a</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/genteng metal pasir (2).jpg" alt="Genteng Metal Pasir" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Genteng Metal Pasir</h3>
+                        <p class="text-gray-600 mt-2">Genteng metal dengan lapisan pasir yang estetis dan tahan lama.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/nok.jpg" alt="Nok" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Nok</h3>
+                        <p class="text-gray-600 mt-2">Nok digunakan pada pertemuan atap untuk menutup ujung genteng.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/spandex metal pasir.jpg" alt="Spandex Metal Pasir" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Spandex Metal Pasir</h3>
+                        <p class="text-gray-600 mt-2">Atap spandeks dengan lapisan pasir yang tahan terhadap cuaca ekstrem.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/talang jurai spandex.jpg" alt="Talang Jurai Spandex" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Talang Jurai Spandex</h3>
+                        <p class="text-gray-600 mt-2">Talang jurai yang digunakan untuk mengalirkan air hujan dari atap ke sistem drainase.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition inline-block max-w-sm max-h-[400px] flex-shrink-0">
+                        <img src="/public/image/talang jurai.jpg" alt="Talang Jurai" class="w-full h-32 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold">Talang Jurai</h3>
+                        <p class="text-gray-600 mt-2">Talang jurai untuk pengaliran air dari atap ke talang utama.</p>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const carousel = document.getElementById('produk-carousel');
+                        const scrollAmount = 300; 
+                
+                        
+                        carousel.scrollLeft = 0;
+                
+                        
+                        function autoScroll() {
+                            const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+                            const currentScrollLeft = carousel.scrollLeft;
+                
+                            
+                            if (currentScrollLeft + scrollAmount >= maxScrollLeft) {
+                                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                            } else {
+                                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                            }
+                        }
+                
+                        
+                        setInterval(autoScroll, 3000);
+                
+                        document.getElementById('next').onclick = () => {
+                            const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+                            const currentScrollLeft = carousel.scrollLeft;
+                
+                            if (currentScrollLeft + scrollAmount >= maxScrollLeft) {
+                                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                            } else {
+                                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                            }
+                        };
+                
+                        document.getElementById('prev').onclick = () => {
+                            const currentScrollLeft = carousel.scrollLeft;
+                
+                            
+                            if (currentScrollLeft <= scrollAmount) {
+                                carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
+                            } else {
+                                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                            }
+                        };
+                    });
+                </script>
+                              
+
+    <!-- Keunggulan Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">3 Alasan Mengapa Harus Memilih Kami?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Pembayaran Fleksibel</h3>
+                    <p class="text-gray-600">Anda bisa melakukan pembayarannya nanti setelah pesanan Anda tiba di tujuan dengan cepat.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Pemesanan Sangat Mudah</h3>
+                    <p class="text-gray-600">Cukup hubungi kami melalui WhatsApp untuk pemesanan cepat tanpa harus datang langsung ke toko.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Harga yang Sangat Kompetitif</h3>
+                    <p class="text-gray-600">Kami menawarkan harga terbaik di pasar untuk produk berkualitas tinggi, memastikan Anda mendapatkan nilai maksimal.</p>
+                </div>
+                <!-- Add more advantages as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang-kami" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-4xl font-bold text-center mb-12">Tentang Kami</h2>
+            <div class="md:flex md:space-x-12">
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 mb-6 text-justify">Baja Inti Prima telah berdiri dan melayani pelanggan sejak 2014, Baja Inti Prima menyediakan layanan purna jual untuk Construction Steel & Material Buldings. Staff kami yang terdiri dari professional dibidangnya siap sedia untuk melayani semua kebutuhan construction steel & bulding materials anda.</p>
+                    <p class="text-gray-700 text-justify">Visi kami adalah menjadi mitra terpercaya dalam setiap proyek konstruksi di Indonesia. Kami menyediakan berbagai produk baja yang teruji dan memiliki sertifikasi kualitas yang tinggi. Dalam setiap langkah, kami berusaha untuk selalu menghadirkan inovasi dan kepuasan pelanggan sebagai prioritas utama kami.Kami sudah berpengalaman untuk pengiriman di beberapa proyek hampir diseluruh indonesia dan disupport oleh armada yg sudah berpengalaman
+                        Telepon kami atau kirim email untuk kebutuhan anda.</p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="/public/image/Baja inti.jpg" alt="Tentang Kami" class="rounded-lg shadow w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-16 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Apa Kata Mereka Tentang Kami?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-xl font-semibold mb-4">Ivana</h3>
+                    <p class="text-gray-600">"BAJA INTI PRIMA telah menjadi mitra terpercaya kami dalam proyek konstruksi. Kualitas produk mereka sangat baik dan layanan mereka luar biasa."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-xl font-semibold mb-4">Hendra</h3>
+                    <p class="text-gray-600">"Saya sangat puas dengan layanan yang diberikan oleh BAJA INTI PRIMA. Pengiriman cepat dan produk selalu sesuai dengan yang dijanjikan."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition text-center">
+                    <h3 class="text-xl font-semibold mb-4">Balak</h3>
+                    <p class="text-gray-600">"Barang sesuai deskripsi dan pengiriman tepat waktu."</p>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">Apakah produk baja yang ditawarkan sudah teruji kualitasnya?</h3>
+                    <p class="text-gray-600">Ya, semua produk baja yang kami tawarkan telah melalui uji kualitas yang ketat dan memiliki sertifikasi sesuai standar nasional.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">Bagaimana cara melakukan pemesanan?</h3>
+                    <p class="text-gray-600">Anda bisa melakukan pemesanan dengan menghubungi kami melalui WhatsApp atau datang langsung ke toko kami.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">Apakah ada jaminan harga terbaik?</h3>
+                    <p class="text-gray-600">Kami selalu berusaha memberikan harga yang kompetitif dan terbaik di pasaran tanpa mengurangi kualitas produk.</p>
+                </div>
+                <!-- Add more FAQs as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- Informasi Pemesanan Section -->
+    <section id="informasi-pemesanan" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Silahkan Di cek e commerce kami dibawah ini </h2>
+            <div class="text-center">
+                <p class="text-gray-700 mb-4">Untuk mempermudah proses pemesanan, Anda bisa menghubungi kami melalui platform berikut:</p>
+                <div class="flex justify-center items-center gap-8 mb-8">
+                    <a href="https://shopee.co.id/bajainti" class="flex flex-col items-center">
+                        <img src="/public/image/sp.png" alt="Shopee" class="w-16 h-16 mb-2">
+                        <span class="text-blue-500 hover:underline text-lg">Shopee</span>
+                    </a>
+                    <a href="https://www.tokopedia.com/bip8351" class="flex flex-col items-center">
+                        <img src="/public/image/tokped.png" alt="Tokopedia" class="w-16 h-16 mb-2">
+                        <span class="text-blue-500 hover:underline text-lg">Tokopedia</span>
+                    </a>
+                    <a href="https://wa.me/1234567890" class="flex flex-col items-center">
+                        <img src="/public/image/Lgo wa.png" alt="WhatsApp Admin" class="w-16 h-16 mb-2">
+                        <span class="text-blue-500 hover:underline text-lg">WhatsApp Admin</span>
+                    </a>
+                    <a href="https://linktr.ee/bajaintiprima" class="flex flex-col items-center">
+                        <img src="/public/image/link1.png" alt="WhatsApp Admin" class="w-16 h-16 mb-2">
+                        <span class="text-blue-500 hover:underline text-lg">Linktree</span>
+                    </a>
+                </div>
+                <p class="text-gray-600">Silakan pilih salah satu cara di atas untuk melakukan pemesanan atau bertanya lebih lanjut tentang produk kami. Kami siap membantu Anda!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 BAJA INTI PRIMA. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
