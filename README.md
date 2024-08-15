@@ -1,33 +1,10 @@
 BAJA INTI PRIMA
-
-Fitur Utama
-
-    Navigasi Responsif: Navbar yang menampilkan tautan ke berbagai bagian situs, seperti Beranda, Produk, Tentang Kami, Testimoni, dan FAQ. Untuk layar kecil, terdapat menu hamburger yang dapat digunakan untuk menampilkan menu navigasi.
-
-    Hero Section: Bagian ini menampilkan gambar latar yang mencolok dengan overlay teks yang menekankan keunggulan utama perusahaan. Juga terdapat tombol Hubungi Kami yang mengarah ke WhatsApp.
-
-    Carousel Produk: Menampilkan beberapa produk unggulan dalam format carousel yang dapat digulir secara otomatis atau manual. Setiap produk dilengkapi dengan gambar, nama produk, dan deskripsi singkat.
-
-    Keunggulan Perusahaan: Bagian ini menjelaskan tiga alasan utama mengapa pelanggan harus memilih Baja Inti Prima, seperti pembayaran fleksibel, kemudahan pemesanan, dan harga yang kompetitif.
-
-    Tentang Kami: Menyediakan informasi lengkap mengenai sejarah, visi, dan misi perusahaan, serta keunggulan produk yang ditawarkan.
-
-    Testimoni: Bagian ini menampilkan ulasan dari beberapa pelanggan yang puas dengan produk dan layanan Baja Inti Prima.
-
-    FAQ: Menyediakan jawaban untuk pertanyaan yang sering diajukan oleh pelanggan, membantu mereka mendapatkan informasi yang dibutuhkan dengan cepat.
-
-    Informasi Pemesanan: Menampilkan berbagai platform e-commerce yang dapat digunakan untuk memesan produk Baja Inti Prima, seperti Shopee dan Tokopedia, serta kontak WhatsApp dan Linktree.
-
-    Footer: Menyertakan informasi hak cipta dan tautan ke kebijakan privasi, syarat layanan, dan kontak perusahaan.
     
 Teknologi yang Digunakan
 
     HTML5: Struktur dasar dari halaman web.
     Tailwind CSS: Digunakan untuk styling yang cepat dan responsif.
     JavaScript: Untuk interaksi dinamis seperti toggle menu pada tampilan mobile dan auto-scrolling pada carousel produk.
-
-
-    Cara Menjalankan
 
 Untuk menjalankan situs web ini secara lokal:
 
