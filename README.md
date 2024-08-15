@@ -12,6 +12,8 @@ Untuk menjalankan situs web ini secara lokal:
     Buka file index.html di browser Anda.
     Pastikan Anda memiliki koneksi internet untuk memuat Tailwind CSS dari CDN.
 
+Final Source : https://bajaintiprima.com/
+
 This HTML code represents the structure and styling for a web page created for BAJA INTI PRIMA, a company offering construction steel and building materials. Below is an explanation of the key components and features included in this code:
 1. Structure and Basic Setup
 
